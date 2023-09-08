@@ -1,4 +1,5 @@
 import { poppins } from "../fonts/poppins";
+import { GlobalStyles } from "../styles/global";
 import StyledComponentsRegistry from "../utils/styled-components/registrity";
 
 export default function RootLayout({
@@ -9,7 +10,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <GlobalStyles />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
