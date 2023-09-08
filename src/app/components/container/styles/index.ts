@@ -3,7 +3,7 @@
 import { styled } from "styled-components";
 import { containerProps } from "../types";
 
-export const Container = styled("div")<containerProps>`
+export const StyledContainer = styled("div")<containerProps>`
   display: flex;
   ${({ position }) => position && `position: ${position};`}
   ${({ left }) => left && `left: ${left};`}
