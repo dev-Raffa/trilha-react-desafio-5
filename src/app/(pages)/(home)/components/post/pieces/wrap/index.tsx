@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import { styles } from "../../styles";
 import { Container } from "@/app/components/container";
+import { styles } from "../../styles";
 
-export const WrapProfile = ({ children }: { children: ReactNode }) => {
+export const WrapPosts = ({ children }: { children?: ReactNode }) => {
   return <Container {...styles.wrap}>{children}</Container>;
 };

@@ -1,11 +1,11 @@
-import { Container } from "@/app/components/container/styles";
 import { styles } from "../../styles";
 import Image from "next/image";
 import picture from "../../../../../../../../public/me_2.jpg";
+import { Container } from "@/app/components/container";
 
 export const PictureProfile = () => {
   return (
-    <Container {...styles.wrap}>
+    <Container {...styles.picture}>
       <Image
         src={picture}
         alt="Picture of the autor"
